@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "shape": "Sphere",
+            "radi" : "10",
+            "density" : "10",
+            "volume": "",
+            "area" :""
+        },
+        {
+            "shape": "Parallelepiped",
+            "a": "10",
+            "b": "15",
+            "c": "7",
+            "density": "10",
+            "volume": "",
+            "area" :""
+        },
+        {
+            "shape": "Tetrahedron",
+            "a": "10",
+            "density": "10",
+            "volume": "",
+            "area" :""
+        }
+    ]
+}
