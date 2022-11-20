@@ -2,11 +2,9 @@ import math
 import json
 
 
-f = open("JSON.json")
+f = open("input.json")
 
-data = json.load(f)
-
-objects = data["data"]
+objects = json.load(f)
 
 def volume(object):
     if object["shape"] == "Sphere":
@@ -65,7 +63,8 @@ def cocktailSort(a):
 
 cocktailSort(objects)
 
-data_out = json.dumps(objects)
+data_out = json.dumps(objects, indent=4)
 
-with open("out_json.json", "r+") as outfile:
+with open("output.json", "w") as outfile:
+    outfile.write("There are a total of " + str(len(objects)) + " objects. They are sorted by area \n")
     outfile.write(data_out)
